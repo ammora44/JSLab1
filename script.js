@@ -8,6 +8,10 @@
         let userHealth = 40;
         let grantHealth = 10;
         let userName = prompt("What is your name?");
+
+        while (!userName) {
+            userName = prompt("Please enter your name");
+        }
         let wins = 0;
         console.log(`Let's Begin! ${userName}'s Starting Health is ${userHealth}, and Grant's Starting Health is ${grantHealth}`);
         while (grantHealth > 0) {
